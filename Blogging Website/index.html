@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>Technical Blogs - By Ashwani</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,   700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!--Section-1 (Top Content of Website)-->
+   <nav>
+      <div class="links">
+         <a href="index.html" target="_blank">Home</a>
+         <a href="#main-blog" target="_blank">Blogs</a>
+         <a href="#recent" target="_blank">Recent</a>
+         <a href="#popular" target="_blank">Popular</a>
+         <a href="#about-me" target="_blank">About</a>
+         <a href="login.html" target="_blank">Sign Up</a>
+      </div>
+   </nav>
+   <top>
+      <h2>Meet New Blogs</h2>
+      <h3>By Ashwani and Juhi</h3>
+      <div class="name">
+         <h3><span style="color: rgb(40, 247, 40);">Technical </span>
+            <span style="color: rgb(41, 183, 239);">Blogging</span>
+            <span style="color: rgb(253, 62, 90);">Website</span>
+         </h3>
+      </div>
+      <h4>Here, You Will get updated with new and latest Technologies.</h4>
+      <div class="button1">
+         <div id="btn">
+            <div id="btn-box"><a href="main.html" target="_blank">Popular</a> </div>
+            <div id="btn-box"><a href="recent.html" target="_blank">Recent</a></div>
+            <div id="btn-box"><a href="hot.html" target="_blank">Explore</a></div>
+         </div>
+      </div>
+   </top>
+   <hr>
+   <!--Section-2 (What's Included In This Website)-->
+   <div class="include">
+      <h1>What's Included</h1>
+      <div class="include-content">
+         <div class="ina">
+            <h2> 30+</h2>
+            <h2>Blogs</h2>
+            <h2>To Read</h2>
+         </div>
+         <div class="ina">
+            <h2>10+</h2>
+            <h2>Sections</h2>
+            <h2>To Explore</h2>
+         </div>
+         <div class="ina">
+            <h2>Unique </h2>
+            <h2>Content</h2>
+            <h2>Availability</h2>
+         </div>
+      </div>
+      <h2>Informative Content, Advantages and Where Implemented</h2>
+   </div>
+   <hr>
+   <!--Section-3(Blog Section)-->
+   <header id="blog">
+      <div class="blog-heading">
+         <span>Welcome to My Blogs</span>
+         <h2><a href="all.html" target="_blank">My Blogs</a></h2>
+      </div>
+      <div class="blog-container">
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="/images/ai2.jpg" alt="Blog">
+            </div>
+            <div class="blog-text">
+               <span>1st November 2023 / Artificial Intelligence</span><br>
+               <a href="all.html"target="_blank" class="blog-title">What you Know More????</a>
+               <hr>
+               <p> AI stands for Artificial Intelligence. It refers to the simulation of human intelligence
+                  processes by machines, specifically computer systems.
+               </p>
+               <a href="all.html" target="_blank">Read More</a>
+            </div>
+         </div>
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="/images/iot1.jpg" alt="Blog">
+            </div>
+            <div class="blog-text">
+               <span>5th November 2023 / Internet of Things</span> <br>
+               <a href="all.html"target="_blank" class="blog-title">What you Know More????</a>
+               <hr>
+               <p>IoT stands for the Internet of Things, which refers to a network of physical devices embedded
+                  with sensors, software, and connectivity features that enable them to connect and exchange data
+                  with other devices and systems over the internet.
+               </p>
+               <a href="all.html" target="_blank">Read More</a>
+            </div>
+         </div>
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="/images/5g1.jpg" alt="Blog">
+            </div>
+            <div class="blog-text">
+               <span>10th November 2023 / 5th Generation</span> <br>
+               <a href="all.html"target="_blank" class="blog-title">What you Know More????</a>
+               <hr>
+               <p>The term "5th generation" in technology typically refers to the fifth generation of mobile
+                  network technology, commonly known as 5G. It represents the latest evolution in cellular
+                  communication technology that succeeds 4G LTE (Long-Term Evolution).
+               </p>
+               <a href="all.html" target="_blank">Read More</a>
+            </div>
+         </div>
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="/images/vr1.jpg" alt="Blog">
+            </div>
+            <div class="blog-text">
+               <span>18th November 2023 / Virtual Reality</span> <br>
+               <a href="all.html"target="_blank" class="blog-title">What you Know More????</a>
+               <hr>
+               <p>Virtual Reality (VR) refers to a simulated, computer-generated environment that can simulate
+                  physical presence in places in the real world or imagined worlds.
+               </p>
+               <a href="all.html" target="_blank">Read More</a>
+            </div>
+         </div>
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="/images/av1.jpg" alt="Blog">
+            </div>
+            <div class="blog-text">
+               <span>20th November 2023 / Autonomous Vehicles </span><br>
+               <a href="all.html"target="_blank" class="blog-title">What you Know More????</a>
+               <hr>
+               <p>Autonomous vehicles, also known as self-driving cars or driverless cars, are vehicles capable of
+                  navigating and operating without direct human input.
+               </p>
+               <a href="all.html" target="_blank">Read More</a>
+            </div>
+         </div>
+         <div class="blog-box">
+            <div class="blog-img">
+               <img src="/images/qc1.jpg" alt="Blog">
+            </div>
+            <div class="blog-text">
+               <span>23rd November 2023 / Quantum Computing </span><br>
+               <a href="all.html" target="_blank"class="blog-title">What you Know More????</a>
+               <hr>
+               <p>Quantum computing is a cutting-edge field of computing that utilizes the principles of quantum
+                  mechanics to perform operations on data.
+               </p>
+               <a href="all.html" target="_blank">Read More</a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <hr>
+   <!--Section-4(Read More - Path to Main Content)-->
+   <br>
+   <button id="bt"><a href="all.html" target="_blank">Read More</a></button>
+   <br> <br>
+   <hr>
+   <!--Section-5(Slide Show For Interactivity)--><br>
+   <br>
+   <br>
+   <div class="carousel">
+      <div class="slides">
+         <div class="slide">
+            <p>1 / 5</p>
+            <br>
+            <img src="/images/ai2.jpg" alt="Slide 1"><br><br>
+            <p>Artificial Intelligence</p>
+         </div>
+         <div class="slide">
+            <p>2 / 5</p>
+            <br>
+            <img src="/images/av1.jpg" alt="Slide 2"><br> <br>
+            <p>Augmented Reality</p>
+         </div>
+         <div class="slide">
+            <p>3 / 5</p>
+            <br>
+            <img src="/images/iot1.jpg" alt="Slide 1"><br><br>
+            <p>Internet Of Things</p>
+         </div>
+         <div class="slide">
+            <p>4 / 5</p>
+            <br>
+            <img src="/images/vr1.jpg" alt="Slide 1"><br><br>
+            <p>Virtual Reality</p>
+         </div>
+         <div class="slide">
+            <p>5 / 5</p>
+            <br>
+            <img src="/images/5g1.jpg" alt="Slide 1"><br><br>
+            <p>5th Generation</p>
+         </div>
+      </div>
+   </div>
+   <br> <br>
+   <hr>
+   <!--Section-6(Main Blogs)--><br>
+   <div id="main-blog">
+      <main>
+         <h1><a href="main.html" target="_blank">Main Blogs</a></h1>
+         <div class="blog-container">
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-mt.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>3rd November 2023 / MetaVerse </span>
+                  <a href="main.html" target="_blank" class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>The meta verse is a collective virtual shared space created by the convergence of physical reality,
+                     augmented reality (AR), virtual reality (VR), and the internet.
+                  </p>
+                  <a href="main.html" target="_blank">Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-bc.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>8th November 2023 / Block Chain </span>
+                  <a href="main.html" target="_blank" class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>Blockchain is a decentralized and distributed digital ledger technology that enables secure,
+                     transparent, and immutable record-keeping of transactions across a network of computers, known as
+                     nodes.
+                  </p>
+                  <a href="main.html" target="_blank">Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-dt.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>10th November 2023 / Digital Twin </span>
+                  <a href="main.html"target="_blank" class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>A digital twin refers to a virtual representation or digital counterpart of a physical object,
+                     system, process, or entity. It's a comprehensive digital model that replicates the real-world
+                     counterpart in detail, collecting real-time data from its physical counterpart to simulate,
+                     analyze,
+                     and optimize its performance or behavior. <br><br>
+                  </p>
+                  <a href="main.html" target="_blank">Read More</a>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+   <div id="web-img">
+      <div id="main-img">
+         <img src="/images/All/all-rt.jpg" alt="" height="250px" width="250px">
+         <div class="cont">
+            <h5>Robots are mechanical or virtual artificial agents designed to perform tasks automatically or
+               autonomously, typically with a level of automation that can range from simple repetitive actions to
+               complex decision-making processes.
+            </h5>
+         </div>
+      </div>
+      <div id="main-img">
+         <div class="cont">
+            <h5>5G, the fifth generation of wireless technology, represents a significant leap forward in mobile
+               communication standards, promising faster speeds, lower latency, and increased capacity compared to
+               its predecessors (2G, 3G, and 4G LTE). <br> <br>
+            </h5>
+         </div>
+         <img src="/images/All/all-5g.jpg" alt="" height="250px" width="250px">
+      </div>
+      <div id="main-img">
+         <img src="/images/All/all-cy.jpg" alt="" height="250px" width="250px">
+         <div class="cont">
+            <h5>Cybersecurity refers to the practice of protecting computer systems, networks, devices, and data from
+               unauthorized access, cyber threats, attacks, damage, or exploitation of vulnerabilities. It
+               encompasses a range of technologies, processes, practices, and measures designed to safeguard
+               digital information and ensure the confidentiality, integrity, and availability of data.
+            </h5>
+         </div>
+      </div>
+      <div id="main-img">
+         <div class="cont">
+            <h5>Drones, also known as Unmanned Aerial Vehicles (UAVs) or Unmanned Aircraft Systems (UAS), are
+               aircraft operated without a human pilot onboard. They can be remotely controlled by a human operator
+               or autonomously programmed to perform various tasks and missions. Drones come in different sizes,
+               shapes, and configurations, and they have found extensive applications across numerous industries
+               due to their versatility and capabilities.
+            </h5>
+         </div>
+         <img src="/images/All/all-dr.jpg" alt="" height="250px" width="250px">
+      </div>
+   </div>
+   <hr>
+   <!--Section-7(Recently Uploaded)-->
+   <div id="recent">
+      <main>
+         <h1><a href="recent.html" target="_blank">Recent Blogs </a></h1>
+         <div class="blog-container">
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-bt.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>23rd December 2023 / Bio-Technology </span>
+                  <a href="recent.html" target="_blank" class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>Biotechnology is a multidisciplinary field that combines biology, genetics, chemistry, engineering,
+                     and other sciences to develop technologies and products that utilize living organisms or biological
+                     systems to create goods, processes, and solutions that benefit society. It encompasses a wide range
+                     of applications aimed at improving health, agriculture, industry, and the environment.
+
+                  </p>
+                  <a href="recent.html" target="_blank">Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-es2.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>20th December 2023 / Electronic Skin </span>
+                  <a href="recent.html" target="_blank"class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>Electronic skin, often referred to as e-skin or electronic dermis, is a flexible, stretchable, and
+                     thin electronic material designed to mimic the functionality and properties of human skin. It
+                     incorporates various sensors, actuators, and electronic components to detect and respond to
+                     different stimuli, making it a promising technology in the fields of robotics, healthcare,
+                     prosthetics, and wearable devices.
+                  </p>
+                  <a href="recent.html" target="_blank">Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-nt2.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>15th December 2023 / Nano-Technology </span>
+                  <a href="recent.html" target="_blank"class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>Nanotechnology is a multidisciplinary field of science and engineering that involves the
+                     manipulation
+                     and control of matter at the nanoscale, typically between 1 to 100 nanometers.
+                  </p>
+                  <a href="recent.html" target="_blank">Read More</a>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+   <div id="web-img">
+      <div id="main-img">
+         <img src="/images/All/all-gpu.jpg" alt="" height="250px" width="250px">
+         <div class="cont">
+            <h5>A Graphics Processing Unit (GPU) is a specialized electronic circuit designed to quickly and
+               efficiently process and render images, graphics, and videos. Originally developed for rendering
+               high-quality graphics in video games, GPUs have evolved to handle parallel processing tasks and are
+               widely used in various computational applications beyond graphics.
+            </h5>
+         </div>
+      </div>
+      <div id="main-img">
+         <div class="cont">
+            <h5>Natural Language Processing (NLP) is a branch of artificial intelligence (AI) that focuses on
+               enabling computers to understand, interpret, generate, and respond to human language in a way that
+               is both meaningful and contextually relevant. NLP aims to bridge the gap between human language and
+               computer understanding, allowing machines to interact with humans using natural language.
+            </h5>
+         </div>
+         <img src="/images/All/all-nlp.jpg" alt="" height="250px" width="250px">
+      </div>
+      <div id="main-img">
+         <img src="/images/All/all-voi.jpg" alt="" height="250px" width="250px">
+         <div class="cont">
+            <h5>A voice interface, also known as a voice user interface (VUI), enables users to interact with
+               computers, devices, or systems using spoken commands or natural language instead of traditional
+               input methods like typing or clicking. These interfaces leverage speech recognition technology and
+               natural language processing (NLP) to understand and interpret spoken language, enabling users to
+               communicate with devices and access various functionalities.
+            </h5>
+         </div>
+      </div>
+      <div id="main-img">
+         <div class="cont">
+            <h5>Digital computing refers to the use of digital technology and electronic devices to perform
+               calculations, process data, store information, and execute various operations based on binary code
+               (0s and 1s). It forms the foundation of modern computing systems and encompasses a wide range of
+               devices and technologies that manipulate digital data.
+            </h5>
+         </div>
+         <img src="/images/All/all-dc2.jpg" alt="" height="250px" width="250px">
+      </div>
+   </div>
+   <hr>
+   <!--Section-8(Hot topics To Read)-->
+   <div id="popular">
+      <main>
+         <h1><a href="hot.html"target="_blank">Hot Topics</a></h1>
+         <div class="blog-container">
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-qc2.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>1st December 2023 / Quantum Computing </span>
+                  <a href="hot.html" target="_blank" class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>Quantum computing represents a paradigm shift in computation, leveraging principles from quantum
+                     mechanics to process and store information in a fundamentally different way compared to classical
+                     computers. Unlike classical computers that use bits (binary units of 0s and 1s), quantum computers
+                     use quantum bits or qubits, which can exist in multiple states simultaneously due to the principles
+                     of superposition and entanglement.
+                  </p>
+                  <a href="hot.html" target="_blank">Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-we2.jpg" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>8th December 2023 / Wearables </span>
+                  <a href="hot.html" target="_blank" class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>Wearables, which include devices like smartwatches, fitness trackers, augmented reality (AR)
+                     glasses,
+                     and other sensor-based gadgets worn on the body, are integrating artificial intelligence (AI) to
+                     enhance their functionalities and provide more personalized experiences to users.
+                  </p>
+                  <a href="hot.html" target="_blank">Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="/images/All/all-av.avif" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>23rd December 2023 / Autonomous Vehicles </span>
+                  <a href="hot.html" target="_blank" class="blog-title">What you Know More????</a>
+                  <hr>
+                  <p>Autonomous vehicles, also known as self-driving or driverless cars, represent a revolutionary
+                     advancement in transportation technology. These vehicles are equipped with sensors, cameras, radar,
+                     lidar, and sophisticated software algorithms that enable them to navigate and operate without human
+                     intervention.
+                  </p>
+                  <a href="hot.html" target="_blank">Read More</a>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+   <div id="web-img">
+      <div id="main-img">
+         <div class="cont">
+            <h5>Artificial Intelligence (AI) refers to the development of computer systems capable of performing
+               tasks that typically require human intelligence. It involves creating algorithms and systems that
+               enable machines to learn from experience, adapt to new information, and perform tasks that usually
+               necessitate human intervention.
+            </h5>
+         </div>
+         <img src="/images/All/all-ai.avif" alt="" height="250px" width="250px">
+      </div>
+      <div id="main-img">
+         <img src="/images/All/all-5g.jpg" alt="" height="250px" width="250px">
+         <div class="cont">
+            <h5>5G, the fifth generation of wireless technology, represents a significant leap forward in mobile
+               communication standards, promising faster speeds, lower latency, and increased capacity compared to
+               its predecessors (2G, 3G, and 4G LTE).
+            </h5>
+         </div>
+      </div>
+      <div id="main-img">
+         <div class="cont">
+            <h5>Augmented Reality (AR) is a technology that overlays digital information or virtual elements, such as
+               images, videos, graphics, or 3D models, onto the real-world environment.
+            </h5>
+         </div>
+         <img src="/images/All/all-ar.jpg" alt="" height="250px" width="250px">
+      </div>
+      <div id="main-img">
+         <img src="/images/All/all-cc.jpg" alt="" height="250px" width="250px">
+         <div class="cont">
+            <h5>Cloud computing refers to the delivery of computing services over the internet, providing access to a
+               shared pool of resources, including servers, storage, databases, networking, software, and
+               applications.
+            </h5>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <!--Section-9(About Section to Introduce Myself)-->
+   <header id="about-me">
+      <div class="name">
+         <h1><span style="color: rgb(30, 244, 30);">Ashwani</span>
+            <span style="color: rgb(55, 186, 238);">Minor</span>
+            <span style="color: rgb(245, 65, 92);">Project</span>
+         </h1>
+      </div>
+      <br>
+      <section id="about">
+         <div class="progress">
+            <div class="progressbar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+               style="width:40%"></div>
+         </div>
+         <div id="left">
+            <p>I'm a</p>
+            <h1> Web Developer</h1>
+            <span>Intern</span>
+            <h1>Software Developer</h1>
+            <p>and a</p>
+            <h1>Technical Blogger.</h1>
+         </div>
+         <div class="right">
+            <img src="/images/mine.jpg.jpeg" alt="Ashwani" height="350px" width="auto" style="border-radius: 50px;">
+         </div>
+      </section>
+   </header>
+   <br>
+   <hr>
+   <!--Section-10(Footer for User Interaction)-->
+   <br>
+   <footer>
+      <div class="foot-a">
+         <p>Sign Up </p>
+         <br>
+         <div class="form">
+            <div class="email">
+               <label for="email">Email</label> <br>
+               <input type="email" name="email" id="email" placeholder="Write Your Email" style="width: 100%;">
+            </div>
+            <br>
+            <div class="pass">
+               <label for="password"> Password</label><br>
+               <input type="password" name="password" id="password" placeholder=" Password " style="width: 100%;"><br>
+               <button id="submit-btn" onclick="signUp()">Sign Up</button>
+            </div>
+         </div>
+      </div>
+      <div id="foot-b">
+         <div id="foot-ba">
+            <ul style="list-style-type: none;">
+               <li>Website</li>
+               <li>Blogs</li>
+               <li>Services</li>
+               <li>About</li>
+               <li>ALL @BLOGS</li>
+            </ul>
+         </div>
+         <div id="foot-ba">
+            <ul style="list-style-type: none;">
+               <li>Connect</li>
+               <li>Sign In</li>
+               <li>Follow</li>
+               <li>E-mail</li>
+               <li>COPYRIGHTS</li>
+            </ul>
+         </div>
+         <div id="foot-ba">
+            <ul style="list-style-type: none;">
+               <li>GitHub</li>
+               <li>Linked In</li>
+               <li>Instagram</li>
+               <li>What's App</li>
+               <li>RESERVED</li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+   <br>
+   <hr>
+   <script src="script.js"></script>
+   <script src="main.js"></script>
+</body>
+
+</html>
